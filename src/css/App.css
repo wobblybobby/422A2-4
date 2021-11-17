@@ -1,0 +1,75 @@
+nav li {
+  display:inline-block;
+  margin: 10px;
+} 
+
+nav > .container-fluid {
+  justify-content: space-evenly;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: whitesmoke;
+  z-index: 1;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  background-color: whitesmoke;
+  z-index: 1;
+}
+
+main {
+  margin-top: 70px;
+  margin-bottom: 150px;
+}
+
+.card {
+  /* width: fit-content; */
+  width: 300px;
+  margin: 10px;
+  /* float: left; */
+}
+
+.card > img {
+  /* height: 20rem;
+  overflow: hidden; */
+  height: 20rem;
+  object-fit:cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+#list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#category-listing {
+  margin: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.list-group-item {
+  min-width: 120px;
+  text-align: center;
+}
+
+.container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.container > h1 {
+  text-align: center;
+  margin: 10px;
+}
