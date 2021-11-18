@@ -13,6 +13,7 @@ import HomePage from "./pages/HomePage";
 import ProductCategoryPage from "./pages/ProductCategoryPage";
 import ProductDescriptionPage from "./pages/ProductDescriptionPage";
 import ProductListingPage from './pages/ProductListingPage';
+import RegistrationPage from './pages/RegistrationPage';
 import DummyPage from './pages/DummyPage';
 import ProductContext from './context/ProductContext';
 
@@ -35,11 +36,14 @@ function App() {
           <Route exact path="/product/:category">
             <ProductCategoryPage/>
           </Route>
-          <Route exact path="/productDescription">
+          <Route exact path="/product/desc/:id">
             <ProductDescriptionPage/>
           </Route>
           <Route exact path="/allProducts">
             <ProductListingPage/>
+          </Route>
+          <Route exact path="/register">
+            <RegistrationPage/>
           </Route>
           <Route exact path="/dummy">
             <DummyPage/>

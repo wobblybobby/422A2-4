@@ -14,7 +14,7 @@ const ProductCategoryPage = () => {
     const {setProducts} = useContext(ProductContext);
 
     useEffect(()=> {
-        fetch(`https://w422a1.herokuapp.com/product?category=${category}`)
+        fetch(`${process.env.REACT_APP_BACK_END_API_DOMAIN}/product?category=${category}`)
         .then(response=>response.json())
         .then(json=>{
             setProducts(json.data)

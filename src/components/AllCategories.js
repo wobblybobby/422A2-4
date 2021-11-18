@@ -6,7 +6,7 @@ const AllCategories = () => {
     const [categories, setCategories ] = useState([]);
 
     useEffect(()=> {
-        fetch(`https://w422a1.herokuapp.com/product/category`)
+        fetch(`${process.env.REACT_APP_BACK_END_API_DOMAIN}/product/category`)
         .then(response=>response.json())
         .then(json=>{
             setCategories(json.data)

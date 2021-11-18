@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
 
-//import logo from "../image/samplelogo.JPG";
 import logoSmoked from "../image/samplelogoSmoked.JPG";
 
 const Header = () => {
@@ -19,7 +18,7 @@ const Header = () => {
                             <Link to="/allProducts" style={{textDecoration: 'none', fontWeight: 'bold'}}>Products</Link>
                         </li>
                         <li>
-                            <Link to="/customer/register" style={{textDecoration: 'none', fontWeight: 'bold'}}>Sign Up</Link>
+                            <Link to="/register" style={{textDecoration: 'none', fontWeight: 'bold'}}>Sign Up</Link>
                         </li>
                         <li>
                             <div class="input-group">

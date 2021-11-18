@@ -13,8 +13,7 @@ const HomePage = () => {
     const {setProducts} = useContext(ProductContext);
 
     useEffect(()=> {
-        /* fetch(`${process.env.REACT_APP_BACK_END_API_DOMAIN}/product?bestseller=yes`) */
-        fetch(`https://w422a1.herokuapp.com/product?bestseller=yes`)
+        fetch(`${process.env.REACT_APP_BACK_END_API_DOMAIN}/product?bestseller=yes`)
         .then(response=>response.json())
         .then(json=>{
             setProducts(json.data)
