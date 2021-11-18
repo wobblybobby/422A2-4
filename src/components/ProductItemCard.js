@@ -18,7 +18,7 @@ const ProductItemCard = (props) => {
                         <p class="card-text">Category: {props.category}</p>
                         <p class="card-text">Bestseller: {bestSell}</p>
                         <p class="card-text">Price: ${props.price}</p>
-                        <a href={`http://localhost:3000/product/desc/${props.id}`} class="btn btn-primary">View Product</a>
+                        <a href={`${process.env.REACT_APP_BACK_END_API_DOMAIN}/product/desc/${props.id}`} class="btn btn-primary">View Product</a>
   </div>
 </div>
     )
